@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang:es>
+<head>
+    <style>
+        :root{
+            --color-fondo: rgb(28, 31, 27);
+            --color-fuente: rgb(212, 233, 122);
+            --color-fuente-titulo: rgb(198, 250, 54);
+            --color-barra: rgb(0, 0, 0);
+            --color-lineas: rgb(70, 77, 67);
+            font-size: 16px;
+        }
+        #bar{
+            position: fixed;
+            color:white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 2em;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            background-color: var(--color-barra);
+            z-index: 2;
+        }
+        body{
+            background-color: var(--color-fondo);
+            margin-top: 70px;
+            display: flex;
+            flex-direction: row;
+        }
+        header{
+            color: var(--color-fuente-titulo);
+        }
+        #main-doc{
+            color: var(--color-fuente);
+            position: relative;
+            border-style: solid;
+            border-width: 2px;
+            border-right: none;
+            border-top: none;
+            border-bottom: none;
+            border-color: var(--color-lineas);
+            margin: 0px 0px 0px 360px;
+            padding: 0px 0px 20px 10px;
+            width: 800px;
+            padding-top: 20px;
+        }
+        #navbar{
+            color: var(--color-fuente);
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+        }
+        #navbar-tittle{
+            font-size: 1.8em;
+        }
+        #link-box{
+            margin-top: 20px;
+            width: 350px;
+            display: grid;
+            grid-template-rows: repeat(6, 15px);
+            grid-row-gap: 18px;
+        }
+        .link-button{
+            position: relative;
+            border-style: solid;
+            border-color: var(--color-lineas);
+            border-width: 2px;
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            padding: 1px;
+            height: 30px;
+        }
+        .nav-link{
+            color: inherit;
+        }
+        .nav-link:link{text-decoration: none;}
+        @media (max-width: 1000px){
+            body{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #main-doc{
+                width: 100vw;
+                margin: 10px 0px 0px 0px;
+                border:none;
+            }
+            #navbar{
+                align-self: center;
+                position:relative;
+            }
+        }
+    </style>
+</head>
+<header id = "bar">Pagina Documentacion</header>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<body id = "body">
+<nav id = "navbar">
+    <header id = "navbar-tittle">convallis libero quis mi condimentum</header>
+    <div id = "link-box">
+    <div class = "link-button"><a href = "#subtitulo_1" class = "nav-link">subtitulo 1</a></div>
+    <div class = "link-button"><a href = "#subtitulo_2" class = "nav-link">subtitulo 2</a></div>
+    <div class = "link-button"><a href = "#subtitulo_3" class = "nav-link">subtitulo 3</a></div>
+    <div class = "link-button"><a href = "#subtitulo_4" class = "nav-link">subtitulo 4</a></div>
+    <div class = "link-button"><a href = "#subtitulo_5" class = "nav-link">subtitulo 5</a></div>
+    <div class = "link-button"><a href = "#subtitulo_6" class = "nav-link">subtitulo 6</a></div>
+    </div>
+</nav>
+<main id = "main-doc">
+    <section class = "main-section" id = "subtitulo_1">
+        <header>subtitulo 1</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+    <section class = "main-section" id = "subtitulo_2">
+        <header>subtitulo 2</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+    <section class = "main-section" id = "subtitulo_3">
+        <header>subtitulo 3</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+    <section class = "main-section" id = "subtitulo_4">
+        <header>subtitulo 4</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+    <section class = "main-section" id = "subtitulo_5">
+        <header>subtitulo 5</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+    <section class = "main-section" id = "subtitulo_6">
+        <header>subtitulo 5</header>
+        <code>Aliquam cursus, lectus laoreet luctus consequat, lectus augue 
+            sagittis metus, in pretium augue sapien et dui. 
+            Proin et lorem vulputate, rhoncus magna et, interdum libero. 
+            Fusce convallis libero quis mi condimentum aliquam.</code>
+        <ul>
+            <li>Aliquam erat</li>
+            <li>auctor urna malesuada</li>
+            <li>lobortis sit amet</li>
+            <li>metus at diam</li>
+            <li>mauris malesuada dictum</li>
+        </ul>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+        <p>Sed facilisis gravida arcu, sed vehicula quam 
+            imperdiet quis. Aliquam erat volutpat. 
+            In hac habitasse platea dictumst. Phasellus 
+            dictum fermentum viverra. Praesent convallis nulla 
+            a nisi faucibus molestie. Sed scelerisque enim 
+            velit, eget auctor urna malesuada vel. Donec 
+            libero est, egestas sit amet imperdiet sit amet, 
+            lobortis sit amet tortor. Fusce tempor augue sit 
+            amet molestie facilisis. Phasellus justo massa, 
+            condimentum vel diam id, rhoncus sodales enim. 
+            Aliquam malesuada metus at diam tempor fringilla. 
+            Aenean a vestibulum leo. Nullam a euismod ante. 
+            Fusce ut lorem in mauris malesuada dictum eu ut 
+            augue. Donec molestie in dui et congue. Phasellus 
+            lacinia est ac ornare tincidunt. </p>
+    </section>
+</main>
+</body>
+<footer>
+
+
+</footer>
+</html>

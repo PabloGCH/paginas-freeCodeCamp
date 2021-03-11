@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang: es>
+    <head>
+        <title>Pagina Formulario</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background-color: rgb(121, 121, 121);
+            }
+            .space{margin: 1%;}
+            .horizontal{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+            #form-box{
+                background-color: white;
+                margin: 2%;
+                padding: 0.5% 4% 1% 4%;
+                border-radius: 1%;
+                width: 35%;
+                height: auto;
+            }
+            #survey-form{
+                display: flex;
+                flex-direction: column;
+            }
+            #comment{
+                resize: none;
+            }
+            #submit{
+                height: 5%;
+                width: 30%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <div class = "horizontal" id = "form-box">
+            <h1 id = "title">Formulario</h1>
+            <p id = "description">Llene los siguientes campos</p>
+            <form id = "survey-form">
+                <label class = "space" id = "name-label" for = "name">Nombre: </label>
+                <input class = "space" name = "name" placeholder = "Nombre" required id = "name" type = "text">
+                <label class = "space" id = "email-label" for = "email">Email: </label>
+                <input class = "space" name = "email" placeholder = "email@example.com" required id = "email" type = "email">
+                <label class = "space" id = "number-label" for = "number">Ingrese un numero(entre 1 y 10):</label>
+                <input class = "space" name = "number" id = "number" placeholder = "Numero" type = "number" max = "10" min = "1">
+                <label class = "space" id = "dropdown-label" for = "dropdown">Elija una opcion</label>
+                <select class = "space" name = "dropdown" id = "dropdown">
+                    <option value = "esta es una opcion">Esta es una opcion</option>
+                    <option value = "este formulario no tiene sentido">Este formulario no tiene sentido</option>
+                    <option value = "opcion tres">Opcion tres</option>
+                </select>
+                <fieldset class = "horizontal" id = "radio-fieldset">
+                    <legend>Elija una de las opciones: </legend>
+                    <div>
+                    <input name = "opciones" id = "Rop1" type = "radio" value = "Rop1">
+                    <label for = "Rop1">Opcion 1</label>
+                    </div>
+                    <div>
+                    <input name = "opciones" id = "Rop2" type = "radio" value = "Rop2">
+                    <label for = "Rop2">Opcion 2</label>
+                    </div>
+                    <div>
+                    <input name = "opciones" id = "Rop3" type = "radio" value = "Rop3">
+                    <label for = "Rop3">Opcion 3</label>
+                    </div>
+                </fieldset>
+                <fieldset id = "checkbox-fieldset">
+                    <legend>Elija las opciones que correspondan</legend>
+                    <div>
+                    <input name = "opciones2" id = "Cop1" type = "checkbox" value = "Cop1">
+                    <label for = "Cop1">Opcion 1</label>
+                    </div>
+                    <div>
+                    <input name = "opciones2" id = "Cop2" type = "checkbox" value = "Cop2">
+                    <label for = "Cop2">Opcion 2</label>
+                    </div>
+                    <div>
+                    <input name = "opciones2" id = "Cop3" type = "checkbox" value = "Cop3">
+                    <label for = "Cop3">Opcion 3</label>
+                    </div>
+                </fieldset>
+                <label class = "space" for = "comment">Deje una opinion del formulario</label>
+                <textarea id = "comment"></textarea>
+                <button class = "space" id = "submit" type = "submit">Enviar</button>
+            </form>
+        </div>
+    </body>
+</html>

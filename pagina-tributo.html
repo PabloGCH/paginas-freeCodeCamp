@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang: es>
+    <head>
+        <title>Arthur Conan Doyle</title>
+        <meta charset="UTF-8">
+        <style>
+            html{
+                background-image: url("res/tribute-back.jpeg");
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            #main{
+                --color-bloque: rgba(0,0,0,0.6);
+                background-color: rgba(70, 45, 26, 0.89);
+                margin: 1% 5% 1% 5%;
+                padding: 1%;
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: center;
+                font-size: medium;
+                border-radius: 0.5%;
+            }
+            #title-div{
+                margin: 0.5%;
+                text-align: center;
+                background-color: var(--color-bloque);
+                height: auto;
+                width: 90%;
+            }
+            #title{
+                font-size: 6em;
+            }
+            #sub-title{
+                font-size: 3em;
+            }
+            #img-div{
+                display: flex;
+                flex-direction: column;
+                margin: 0.5%;
+                padding: 5%;
+                background-color: var(--color-bloque);
+                width: 40vw;
+                height: auto;
+            }
+            #image{
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
+            #tribute-info{
+                margin: 0.5%;
+                padding: 0.5% 2% 0.5% 2%;
+                background-color: var(--color-bloque);
+            }
+            #time-line{
+                background-color: var(--color-bloque);
+                line-height: 150%;
+                padding: 1%;
+                font-size: 1em;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            #more-info{
+                font-size: 2em;
+            }
+            li{
+                margin: 1%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <main id = "main">
+            <div id = "title-div">
+                <p id = "title">Arthur Conan Doyle</p>
+                <p id = "sub-title">Escritor, Medico y creador de Sherlock Holmes</p>
+            </div>
+            <figure id = "img-div">
+                <img id = "image" src = "https://upload.wikimedia.org/wikipedia/commons/b/bb/Conan_doyle.jpg">
+                <figcaption id = "img-caption">Imagen de Arthur Conan Doyle</figcaption>
+            </figure>
+            <div id = "tribute-info">
+                <h3 id = "time-line-title"></h3>
+                <ul id = "time-line">
+                    <li>1859- Nacio en Edimburgo el 22 de mayo.</li>
+                    <li>1876- Comienza sus estudios universitarios en la Universidad de Edimburgo(1876-1881).</li>
+                    <li>1879- Escribe sus primeras historias cortas, publica "The Mystery of Sasassa Valley".</li>
+                    <li>1880- Se embarca como cirujano en el ballenero "Hope".</li>
+                    <li>1885- Se casa con Louise Hawkins.</li>
+                    <li>1887- Publica "El Estudio en Escarlata" (Primera aparicion de Sherlock Holmes).</li>
+                    <li>1890- Publica "El Signo de Los Cuatro".</li>
+                    <li>1891- Escribe varios cuentos de Sherlock Holmes, en uno de los cuales intenta matar el personaje de Sherlock Holmes, aunque su madre
+                    y sus fans no le permiten terminar sus novelas y cuentos del personaje.</li>
+                    <li>1900- Participa como medico en la Guerra de los Boers.</li>
+                    <li>1901- Publica "El Sahueso de Baskerville".</li>
+                    <li>1902- Es nombrado caballero de la Orden del Imperio Britanico.</li>
+                    <li>1906- Muere su primera Mujer.</li>
+                    <li>1907- Vuelve a casarse con Jean Leckie.</li>
+                    <li>1908- Publica "Su Ultima Revancha" libro en el cual Sherlock Holmes se retira, dandole un final al personaje.</li>
+                    <li>1912- Empieza a escribir novelas de ciencia ficcion.</li>
+                    <li>1914- Intenta enlistarse para pelear en la Segunda Guerra Mundial pero lo rechazan.</li>
+                    <li>1930- Muere en Crowborough.</li>
+                </ul>
+                <p id = "more-info">
+                    Si quieres conocer más de este ilustre escritor, puedes leer mas en <a id = "tribute-link" target = "_blank" href = "https://en.wikipedia.org/wiki/Arthur_Conan_Doyle">wikipedia</a>
+                </p>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+    </footer>
+</html>
